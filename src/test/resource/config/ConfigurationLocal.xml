@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>file:///</value>
+    </property>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>local</value>
+    </property>
+    <property>
+        <name>mapreduce.task.io.sort.mb</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>mapreduce.job.reduces</name>
+        <value>3</value>
+    </property>
+    <property>
+        <name>mapreduce.output.SequenceFileOutputFormat.compress</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>mapreduce.output.SequenceFileOutputFormat.compress.codec</name>
+        <value>org.apache.hadoop.io.compress.SnappyCodec</value>
+    </property>
+</configuration>
